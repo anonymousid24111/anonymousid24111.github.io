@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Video call of Giang</title>
+	<script src="jquery.js"></script>
+	<script src="peer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+</head>
+<body>
+	<div id="div-chat">
+		<p>Online user: </p>
+		<ul id="ulUser">
+			
+		</ul>
+
+		<h2 id="my-peer">Your id: </h2>
+		<video id="localStream" width="300px" controls></video>
+		<br/>
+		<br/>
+		<video id="remoteStream" width="300px" controls></video>
+		<br/>
+		<br/>
+		<input type="text" id="remoteId" placeholder="remote IO">
+		<button id="btnCall">Call</button>
+	</div>
+	<div id="div-dang-ky">
+		<br/>
+		<br/>
+		<input type="text" id="txtUsername" placeholder="Enter Your Name: ">
+		<button id="btnSignUp">Sign UP</button>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
